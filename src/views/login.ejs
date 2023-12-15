@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal/Login</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <img src="/assets/img/cu_icon.png" alt="icon">
+        <h2>BIENVENIDO</h2>
+        <form action="/api/login-user" method="POST">
+          <div class="user-box">
+            <input type="text" name="username" required>
+            <label>Correo Electrónico</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="password" required>
+            <label>Contraseña</label>
+          </div>
+          <div class="button">
+            <a href="">¿Has olvidado tu contraseña?</a>
+            <button class="button_submit" type="submit">LOGIN</button>
+        </div>
+        </form>
+      </div>
+</body>
+</html>
