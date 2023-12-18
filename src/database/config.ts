@@ -2,14 +2,15 @@ import { Sequelize } from "sequelize";
 import dotenv from 'dotenv';
 dotenv.config();
 
-const database = process.env.DB_NAME || '';
-const user = process.env.DB_USER || '';
-const password = process.env.DB_PASSWORD || '';
+const database = 'railway';
+const user = 'root';
+const password = '5ceC3b4cB5b6eC54Dfe2d-c365AGF346';
 
 const DB = new Sequelize(database, user, password, {
-   host: 'localhost',
+   host: 'roundhouse.proxy.rlwy.net',
    dialect: 'mysql',
-   logging: false
+   logging: false, 
+   port: 36012
 });
 
 export default DB;
